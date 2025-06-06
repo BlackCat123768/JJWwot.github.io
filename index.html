@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Internal Server Error</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #f7f9fc;
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .error-container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 5rem;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        .error-details {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 25px 0;
+            font-family: monospace;
+            text-align: left;
+            font-size: 0.9rem;
+            border-left: 3px solid #e74c3c;
+        }
+        .action-buttons {
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+        .btn-secondary {
+            border: 1px solid #3498db;
+            color: #3498db;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .server-info {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>500</h1>
+        <h2>内部服务器错误</h2>
+        
+        <p>服务器遇到意外错误，无法完成您的请求</p>
+        
+        <div class="error-details">
+            [错误信息] PHP Fatal error: Uncaught Exception: Database connection failed/HOVsHYZrHXVsHOVsHYVrDYZsHYVsHYZbHOVrHYVrDYZsHOVsHYVbHOZrHOZsHNVsHOZrHOZsDYZsHYVsHYZbHOZsHYVsHXVsHYVrHYVbHOZrHOZsHNVsHOVrHOZrDYZrHYVrHXVsHOZrHOZsDYZsHYZsHOZbHOZsHYVsHXVsHOVsHOVrDYZsHYVsHYVbHOZsHYVsHNVsHYVrHYVbHOZsHYZsHNVsHOVsHYVsDYZsHYZsHYVbHOZrHOZrHXVsHYVrHYVbHOZrHYZsHXVsHOVrHYVsDYZsHYZsHYVbHOZrHOZrHXVsHYZsHOVbHOVsHXVsHYZrHOVrDYZsHYZrHYVbHOZrHYZrHNVsHYVrHYVbHOVrHYZsHNVsHYZrHOVsDYZrHYVsHYZbHOVsHYVsHNVsHYZrHOVrDYZrHYVrHXVsHOZrHOZsDYZsHYZrHYZbHOZrHOZrHXVsHOVsHOVrDYZrHYVrHXVsHOVrHYZsDYZsHYZsHOZbHOZrHOZrHNVsHOVrHOVsDYZrHOZsHXVsHYZrDYZrHOVsHYVbHOZrHOVrHXVsHOVrHOVsDYZrHYVrHXVsHOZrHOZrDYZsHYZrHYZbHOZrHYVsHNVsHOZrHOVrDYZsHYZrHYZbHOZrHOZrHNVsHYVrHYVbHOZsHYZsHNVsHOVsHYVsDYZsHYZsHYVbHOZrHOZrHXVsHYVrHYVbHOZrHYVsHXVsHOVrHOVsDYZrHYVrHXVsHOZrHYZrDYZsHYVsHYZbHOZrHYZrHXVsHOZrHOVsDYZsHYVrHOZbHOZrHYZrHNVsHOVrHOVrDYZrHYVrHXVsHOZrHOVrDYZsHYZsHOZbHOVrHYVrDYZsHOVrHYVbHOZrHOVrHNVsHOVrHOVsDYZsHYVrHOZbHOZrHYZrHNVsHOZrHYZsDYZrHOZsHXVsHYZrDYZrHOVrHYVbHOZrHYZrHNVsHOVsHOZsDYZsHOVrHYVbHOZrHOZrHXVsHOVrHOVsDYZrHYVrHXVsHOZrHOZsDYZsHYZrHYVbHOZrHOZsHNVsHYVrHYVbHOZrHYVrHNVsHOZrHYZrDYZsHYVsHYZbHOVrHYVrDYZsHYZrHYZbHOZrHYZsHNVsHOVsHOZrDYZsHYZsHOZbHOZsHYVsHXVsHOVrHOVsDYZsHYVsHYVbHOVrHYVrDYZsHOVsHOZbHOZrHOVrHNVsHOVsHOVrDYZsHYZsHYVbHOVrHYVrDYZsHYVrHOVbHOZrHYZrHNVsHYVrHYVbHOZsHYVsHXVsHOVrHOVsDYZsHYVsHOZbHOZrHYZrHNVsHOVsHOZrDYZsHYVsHYZbHOZsHYVsHXVsHOVrHYVsDYZsHOVsHYVbHOZrHOVrHNVsHOVsHOZsDYZsHYZsHOVbHOVsHOZrDYZrHOVbHOVrHYZrHNVsHOZsHYVrDYZsHOVrHYVbHOZrHYVrHNVsHOZrHOVrDYZsHOVrHOVbHOZrHOVrHNVsHOVrHYVsDYZsHOVsHYVbHOZrHYZrHNVsHOZrHYZsDYZrHYVrHXVsHOZrHOZsDYZsHYZrHYZbHOZrHOZrHXVsHOVsHOVrDYZrHYVrHXVsHOVrHYZrDYZsHYVsHYZbHOVrHYVrDYZsHYVrHOVbHOZrHYVrHNVsHOVrHYZsDYZsHYZrHOZbHOZsHYVsHNVsHOZrHOVrDYZsHYVrHYZbHOZrHYVsHXVsHOVrHYZrDYZsHYVsHYZbHOZrHYZrHXVsHYZsHOVbHOVsHXVsHYVrHYZsDYZrHYZsHYVbHOVrHOZsHNVsHYVrHYZsDYZrHYZrHOZbHOVrHYVrDYZrHYZrHYZbHOVsHYVsHNVsHYVrHYVbHOVsHYZrHXVsHYVsHYVsDYZrHYVrHOZbHOVrHOVsHNVsHYVsHYVsDYZrHYZsHOVbHOVrHYZsHL==<br>
+            [文件路径] /var/www/html/api/v2/core/Database.php:120<br>
+            [请求ID] 3e9b1f7a-62c4-4d8f-ba1d-0c5f5821f3e2<br>
+            [时间戳] 2023-10-05T14:23:17+08:00
+        </div>
+
+        <p>请稍后重试，或联系网站管理员报告此问题</p>
+        
+        <div class="action-buttons">
+            <a href="/" class="btn btn-primary">返回首页</a>
+            <a href="mailto:admin@example.com" class="btn btn-secondary">联系技术支持</a>
+        </div>
+        
+        <div class="server-info">
+            Server: nginx/1.18.0 | Host: web-prod-03 | Generated: 05/Oct/2023:14:23:17 +0800
+        </div>
+    </div>
+</body>
+</html>
